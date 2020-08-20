@@ -17,7 +17,7 @@ public class Main {
 
         System.out.printf( "Soma = %d,", z);
 
-        
+        sc.close();
     }
 
         
