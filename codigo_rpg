@@ -1,0 +1,30 @@
+//import java.util.Scanner;
+import java.util.Random;
+
+public class olamundo {
+     public static void main(String[] args) {
+
+     
+          var gerador = new Random();
+
+          int num;
+          int falha_critica;
+
+
+          System.out.println();
+          falha_critica = gerador.nextInt(20);
+
+          System.out.printf("%d\n", falha_critica);
+
+          if (1 == falha_critica) {
+               System.out.println("Morreu");
+          }
+          else {
+               System.out.println("Ta vivo"); 
+          }
+          
+     
+         
+     }
+    
+}
