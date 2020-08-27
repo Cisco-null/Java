@@ -6,23 +6,30 @@ public class olamundo {
 
      
           var gerador = new Random();
+          var sc = new Scanner(System.in);
 
           int num;
           int falha_critica;
+
+
+
+          System.out.println();
           
-          falha_critica = gerador.nextInt(20); //gera num aleatório até 20
+          falha_critica = gerador.nextInt(20);
           
-          Scanner sc = new Scanner(System.in);
+
+          //Scanner sc = new Scanner(System.in);
           num = sc.nextInt();
           num += falha_critica; // está somando o numero lido e o numero random
           
-          System.out.printf("%d\n%d", falha_critica,num);
+          System.out.printf("%d\n%d\n", falha_critica,num);
+
 
           if (1 == falha_critica) {
                System.out.println("Morreu");
           }
           else {
-               System.out.println("Ta vivo"); 
+               System.out.println("Ta vivo\n"); 
           }
           
      
