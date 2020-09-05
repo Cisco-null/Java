@@ -1,3 +1,4 @@
+  
 import java.util.Scanner;
 
 
@@ -12,26 +13,31 @@ public class Main{
 
         renda = sc.nextDouble();
 
-        if (renda < 2000){
+        if (renda < 2000.01){
             System.out.printf("Isento");
         }
 
         else if (renda<3000.01) {
-            double imposto = renda * 0.08;
+            double imposto = (renda - 2000) * 0.08 + 1000 *0.08;
 
             System.out.printf("R$ %.2f", imposto);
         }
 
-        else if (renda<4500.00) {
-            double imposto = renda * 0.18;
+        else if (renda<4500.01) {
+            double imposto = (renda - 3000) * 0.18 + 1000 *0.08;
+
 
             System.out.printf("R$ %.2f", imposto);
         }
 
         else if (renda>4500.00) {
-            double imposto = renda * 0.28;
+            double imposto = (renda - 4500) * 0.28 + 1500 * 0.18 + 1000 *0.08;
+
 
             System.out.printf("R$ %.2f", imposto);
         }
+
+        sc.close();
     }
+
 }
