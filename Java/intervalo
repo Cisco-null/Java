@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+
+
+public class Main{
+
+    public static void main(String[] args) {
+        var sc = new Scanner(System.in);
+
+        double valor;
+
+        valor = sc.nextDouble();
+
+        if (valor<0.0 && 100.0 > valor) {
+
+            System.out.printf("Fora de intervalo");
+        }  
+
+        else if (valor<25.50 && 100.0 > valor) {
+            
+            System.out.printf("Intervalo (25,50] %.2f", valor);
+        }  
+
+        else if (valor<50.75 && 100.0 > valor) {
+            
+            System.out.printf("Intervalo [0,25] %.2f", valor);
+        }  
+
+        else if (valor<75.100 && 100.0 > valor) {
+            
+            System.out.printf("Intervalo (75,100] %.2f", valor);
+        }  
+
+    
+    
+    }
+
+}
