@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+
+
+public class Main{
+
+    public static void main(String[] args) {
+        var sc = new Scanner(System.in);
+
+        double x,y;
+
+        x = sc.nextDouble();
+        y = sc.nextDouble();
+
+        if (x == 0 && y == 0) {
+            System.out.printf("Origem");
+        }
+         else if ( x == 0){
+            System.out.printf("Eixo Y");
+         }
+         else if ( y == 0){
+            System.out.printf("Eixo X");
+         }
+         else if ( x>0 && y>0){
+            System.out.printf("Q1");
+         }
+         else if ( x<0 && y>0){
+            System.out.printf("Q2");
+         }
+         else if ( x<0 && y<0){
+            System.out.printf("Q3");
+         }
+         else{
+            System.out.printf("Q4");
+         }
+
+        sc.close();
+    }
+}
