@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+
+public class Main{
+
+    public static void main(String[] args) {
+        var sc = new Scanner(System.in);
+
+        int codigo;
+        int quantidade;
+
+        codigo = sc.nextInt();
+        quantidade = sc.nextInt();
+
+        if (1 == codigo) { 
+            
+        
+        double valor = quantidade * 4.00;
+
+            System.out.printf("Total: %.2f", valor);
+
+        }
+
+        else if (2 == codigo) { 
+            
+        
+            double valor = quantidade * 4.50;
+    
+                System.out.printf("Total: %.2f", valor);
+    
+            }
+        else if (3 == codigo) { 
+            
+        
+        double valor = quantidade * 5.00;
+    
+            System.out.printf("Total: %.2f", valor);
+    
+        }
+        else if (4 == codigo) { 
+            
+        
+            double valor = quantidade * 2.00;
+        
+                System.out.printf("Total: %.2f", valor);
+        
+            }
+        else if (5 == codigo) { 
+            
+        
+        double valor = quantidade * 1.50;
+            
+         System.out.printf("Total: %.2f", valor);
+            
+         }
+    
+	}
+}
