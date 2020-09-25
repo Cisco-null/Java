@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        
+         var sc = new Scanner(System.in);
+         
+         int produto = sc.nextInt();
+         int alcool = 0;
+         int gasolina = 0;
+         int diesel = 0;
+
+         while(produto != 4){
+            switch (produto){
+               case 1 : 
+                alcool +=1;
+                break;
+               case 2:
+               gasolina +=1;
+               break;
+               case 3:
+               diesel +=1;
+               break;
+            }
+            produto = sc.nextInt();
+
+         }
+
+         System.out.println("Muito Obrigado");
+         System.out.println("Alcool: " + alcool);
+         System.out.println("Gasolina: " + gasolina);
+         System.out.println("Diesel: " + diesel);
+
+         sc.close();
+
+    }
+}
